@@ -1,10 +1,10 @@
 # Site settings — consumed at build time; restart the build after editing.
-title: Enterprise Sales Apply
-tagline: Insights on enterprise sales strategy, process, and growth
+title: AgentStack Journal
+tagline: Notes on enterprise software, internal apps, and AI agents
 description: >-
-  The Enterprise Sales Apply blog — field notes, playbooks, and lessons on
-  running an enterprise sales motion that scales.
-author: Enterprise Sales Apply
+  The AgentStack Journal — field notes, patterns, and lessons on building
+  enterprise software, internal apps, and AI agents that scale.
+author: AgentStack Journal
 lang: en
 
 # Set these for your deployment. `url` is the origin, `baseurl` the subpath
