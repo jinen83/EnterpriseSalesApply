@@ -22,3 +22,9 @@ Compounding failure diary for this Jekyll + GitHub Pages site. High-signal gotch
 - GitHub Pages builds Jekyll natively on push — no Actions workflow or custom CI
   needed. Set `url`/`baseurl` in `_config.yml`: `baseurl: "/EnterpriseSalesApply"`
   for a project page, empty for a user/org page, or asset links 404.
+- Rebranding via `_config.yml` alone is NOT enough: `_posts/*.md` may hardcode
+  `author:` in front matter, which `_includes/post-meta.html` (`page.author |
+  default: site.author`) and the jekyll-feed entry `<author>` render as the OLD
+  brand on post pages and in `feed.xml`. Symptom: new brand everywhere except the
+  post byline/feed entry author. Fix: drop the per-post `author:` line so it
+  inherits `site.author`, then grep `_site/` for the old brand to confirm.

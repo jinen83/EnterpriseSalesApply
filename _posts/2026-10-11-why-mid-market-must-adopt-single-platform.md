@@ -2,7 +2,6 @@
 layout: post
 title: "Why Mid-Market Must Consolidate Apps and AI Agents Onto a Single Platform"
 date: 2026-10-11 09:00:00 -0000
-author: Enterprise Sales Apply
 summary: >-
   App and agent sprawl is quietly taxing mid-market revenue teams. Here is what
   large enterprises learned consolidating software and AI agents under one

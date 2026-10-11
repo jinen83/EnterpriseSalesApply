@@ -1,7 +1,7 @@
-# Enterprise Sales Apply
+# AgentStack Journal
 
-The **Enterprise Sales Apply** blog — field notes, playbooks, and lessons on
-running an enterprise sales motion that scales. Built as a
+The **AgentStack Journal** — field notes, patterns, and lessons on building
+enterprise software, internal apps, and AI agents that scale. Built as a
 [Jekyll](https://jekyllrb.com/) site and hosted on **GitHub Pages**, which
 builds Jekyll natively on every push (no custom CI required).
 
