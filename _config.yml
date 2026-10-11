@@ -9,8 +9,8 @@ lang: en
 
 # Set these for your deployment. `url` is the origin, `baseurl` the subpath
 # (e.g. "/EnterpriseSalesApply" for a project page, "" for a user/org page).
-url: ""
-baseurl: ""
+url: "https://jinen83.github.io"
+baseurl: "/EnterpriseSalesApply"
 
 # Build settings
 markdown: kramdown
