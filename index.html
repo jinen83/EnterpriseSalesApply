@@ -1,0 +1,29 @@
+---
+layout: default
+title: Home
+---
+
+<h1 class="page-title">{{ site.title }}</h1>
+<p class="lead">{{ site.tagline | default: site.description }}</p>
+
+{% if site.posts.size > 0 %}
+  <ul class="card-grid">
+    {% for post in site.posts %}
+      <li class="card">
+        <h2 class="card__title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h2>
+        <p class="card__meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">
+            {{ post.date | date: "%B %-d, %Y" }}
+          </time>
+        </p>
+        <p class="card__excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <div class="empty-state">
+    <p>No posts yet — new writing on enterprise sales strategy is on the way.</p>
+  </div>
+{% endif %}
