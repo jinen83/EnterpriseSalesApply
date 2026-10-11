@@ -1,0 +1,20 @@
+{%- comment -%}
+  Listing card for a single post. Expects `include.post`.
+  Shows title (links into the article), publish date, and a one-line summary
+  (front-matter `summary`, falling back to the generated excerpt).
+{%- endcomment -%}
+{%- assign post = include.post -%}
+<li class="card">
+  <h2 class="card__title">
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </h2>
+  <p class="card__meta">
+    <time datetime="{{ post.date | date_to_xmlschema }}">
+      {{ post.date | date: "%B %-d, %Y" }}
+    </time>
+  </p>
+  {%- assign card_summary = post.summary | default: post.excerpt -%}
+  {%- if card_summary %}
+    <p class="card__excerpt">{{ card_summary | strip_html | normalize_whitespace | truncatewords: 30 }}</p>
+  {%- endif -%}
+</li>
