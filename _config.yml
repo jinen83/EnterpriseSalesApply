@@ -1,0 +1,45 @@
+# Site settings — consumed at build time; restart the build after editing.
+title: Enterprise Sales Apply
+tagline: Insights on enterprise sales strategy, process, and growth
+description: >-
+  The Enterprise Sales Apply blog — field notes, playbooks, and lessons on
+  running an enterprise sales motion that scales.
+author: Enterprise Sales Apply
+lang: en
+
+# Set these for your deployment. `url` is the origin, `baseurl` the subpath
+# (e.g. "/EnterpriseSalesApply" for a project page, "" for a user/org page).
+url: ""
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:year/:month/:day/:title/
+
+# Plugins (also listed in the Gemfile :jekyll_plugins group).
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Default front matter so pages/posts get a layout without repeating it.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Exclude build/tooling files from the generated site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - CLAUDE.md
+  - .codebeast/
+  - vendor/
